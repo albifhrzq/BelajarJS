@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CONTOH BOM JS</h1>
+    <button id="ShowUrl">tampilkan url</button>
+    <button id="GoToGoogle">tampilkan browser google</button>
+
+    <script>
+        const ShowUrlButton = document.getElementById("ShowUrl");
+        const GoToGoogleButton = document.getElementById("GoToGoogle");
+
+            ShowUrlButton.addEventListener("click", () => {
+            alert("Current Url:" + window.location.href);
+        });
+
+            GoToGoogleButton.addEventListener("click", () => {
+            window.location.href ="https://www.google.com";
+        });
+    </script>
+</body>
+</html>

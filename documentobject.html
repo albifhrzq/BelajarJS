@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulate element</title>
+</head>
+<body>
+    <h1 id="header">hello pplg</h1>
+    <p class="description">object</p>
+    <button id="changecontent">ubah context</button>
+    <script>
+        const header = document.getElementById("header");
+        const paragraph = document.querySelector(".description");
+        const button = document.getElementById("changecontent");
+
+        button.addEventListener("click", () => {
+            header.textContent = "Hello, Document object";
+            paragraph.textContent = "content";
+        });
+    </script>
+</body>
+</html>
