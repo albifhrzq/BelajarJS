@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="parent">PARENT</h1>
+    <p>children 1</p>
+    <p>children 2</p>
+    <script>
+        const parent = document.querySelector('parent');
+        console.log("Parent: ", parent.parentNode.nodeName);
+        console.log("Children: ", parent.childNodes);
+        console.log("Only Element Children: ", parent.children);
+        console.log("First Child: ", parent.firstChild);
+        console.log("first element child: ", parent.firstElementChild);
+        
+    </script>
+</body>
+</html>
